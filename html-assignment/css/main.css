@@ -19,10 +19,11 @@ header, footer {
 
 .hobby-list {
     list-style-type: square;
+    color: black;
 }
 
 .hobby-list li:nth-child(odd) {
-    background-color: #f2f2f245;
+    background-color: #0a01011e;
 }
 
 nav ul {
@@ -32,7 +33,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    background-color: whitesmoke;
+    background-color: darkgray;
     border: 1px solid blue;
     padding: 5px 10px;
     display: inline-block;
