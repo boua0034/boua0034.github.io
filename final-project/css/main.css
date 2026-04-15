@@ -1,0 +1,207 @@
+/* Project: Three Star Media Final
+   Author: Bouaziz B.
+   Strategy: Mobile-First Responsive Design
+*/
+
+/* 1. CSS RESET & FONTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* 2. MOBILE-FIRST STYLES (Default - Matches mobile-mockup.jpg) */
+
+/* Header - Gold bar on mobile */
+.main-header {
+    background-color: #c78c06;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Nav - Dark bar on mobile */
+.main-nav {
+    background-color: #222;
+    padding: 15px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stacked links */
+    align-items: center;
+    gap: 15px;
+}
+
+.main-nav a {
+    color: #ffe6ac;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.main-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.main-button {
+    background-color: #c78c06;
+    color: #222;
+    padding: 12px 24px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* About Us - Light Gold Background */
+.about-section {
+    background-color: #ffe6ac;
+    padding: 30px 20px;
+}
+
+/* Services - Stacked on Mobile */
+.services-section {
+    padding: 30px 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #ffe6ac;
+    padding-bottom: 20px;
+}
+
+.secondary-button {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+/* Team - Stacked on Mobile */
+.team-member {
+    background-color: #ffe6ac;
+    margin-bottom: 30px;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+/* 3. DESKTOP STYLES (Applies only when screen is 760px or wider) */
+/* This matches screencapture-127-0-0-1...index.html (Desktop Mockup) */
+
+@media screen and (min-width: 760px) {
+    
+    /* Header layout changes to white background with side-by-side elements */
+    .main-header {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px; /* Teacher Requirement */
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        background-color: transparent;
+    }
+
+    .main-nav ul {
+        flex-direction: row; /* Horizontal links */
+    }
+
+    .main-nav a {
+        color: #222;
+    }
+
+    /* About Us - Side-by-Side Flexbox */
+    .about-section {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about-image, .about-text {
+        flex: 1;
+        padding: 50px;
+    }
+
+    /* Services - CSS Grid Requirement */
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* 6 columns to allow 2-top / 3-bottom split */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Top 2 items: Take 3 columns each (50% width) */
+    .service-item:nth-child(1),
+    .service-item:nth-child(2) {
+        grid-column: span 3;
+    }
+
+    /* Bottom 3 items: Take 2 columns each (33% width) */
+    .service-item:nth-child(3),
+    .service-item:nth-child(4),
+    .service-item:nth-child(5) {
+        grid-column: span 2;
+    }
+
+    /* Team Section - Side-by-Side Flexbox/Grid */
+    .team-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .team-member {
+        display: flex; /* Image on left, text on right */
+    }
+
+    .team-member img {
+        width: 40%;
+        object-fit: cover;
+    }
+
+    /* Contact Section - Side-by-Side */
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 40px;
+    }
+}
