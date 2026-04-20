@@ -1,0 +1,267 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 1.6;
+    color: #222; 
+    background-color: white;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.main-header {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+.main-nav ul li {
+    padding: 10px 0;
+}
+
+.main-nav a {
+    color: #ffe6ac;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.search-bar {
+    background-color: #c78c06; 
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+}
+
+.search-bar button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+
+.main-section {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+.section-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 90%;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #c78c06; 
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* قسم About Us */
+.about-section {
+    background-color: #ffe6ac;
+    padding: 40px 0;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+
+.services-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.service-item {
+    background-color: #ffe6ac; 
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+}
+
+.service-item h3 {
+    margin: 15px 0;
+}
+
+.secondary-button {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
+
+.vision-banner {
+    background: url('../images/vision.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.vision-content {
+    background-color: rgba(34, 34, 34, 0.8); 
+    padding: 30px;
+}
+
+
+.team-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team-member {
+    background-color: #ffe6ac; 
+    margin-bottom: 30px;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info hr {
+    border: 0;
+    height: 1px;
+    background: #c78c06;
+    margin: 10px auto;
+    width: 50%;
+}
+
+
+.contact-section {
+    padding: 40px 20px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form-container input, 
+.contact-form-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.hours-container {
+    padding: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #c78c06;
+    text-align: center;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+
+.map-location iframe {
+    width: 100%; 
+    height: 300px;
+}
+
+
+.main-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-footer a {
+    color: #c78c06;
+}
