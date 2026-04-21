@@ -18,7 +18,7 @@
      <!-- Main Navigation -->
         <nav class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
@@ -37,86 +37,81 @@
     <main>
        <!-- Main Section -->
         <section class="main-section">
-            <div class="section-content">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque.</p>
-                <a href="#" class="main-button">Connect with us </a>
+            <div class="hero-overlay">
+                <div class="section-content">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque.</p>
+                    <a href="#" class="main-button">Connect with us </a>
+                </div>
             </div>
         </section>
        <!-- About Us Section -->       
         <section id="about" class="about-section">
-            <div class="about-image">
-                <img src="images/about-us.jpg" alt="Our office space">
-            </div>
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde repellendus exercitationem asperiores ducimus placeat.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis.</p>
-            </div>
+            <div class="container about-grid"> 
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="Our office space">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde repellendus exercitationem asperiores ducimus placeat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis.</p>
+                </div>
+            </div> >
         </section>
 
-       <!-- Services Section -->        
+        <!-- Services Section -->
         <section id="services" class="services-section">
-            <h2>Our Services</h2>
-            <div class="services-container">
-        <!-- First Service -->
-                <article class="service-item">
-                    <img src="images/digital.jpg" alt="Digital Transformation">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi.</p>
-                    <a href="#" class="secondary-button">Digital Plans </a>
-                </article>
-
-        <!-- second Service -->
-                <article class="service-item">
-                    <img src="images/marketing.jpg" alt="Marketing">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi.</p>
-                    <a href="#" class="secondary-button">Marketing Plans </a>
-                </article>
-
-        <!-- third Service -->
-                <article class="service-item">
-                    <img src="images/video.jpg" alt="Video Production">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi.</p>
-                    <a href="#" class="secondary-button">Video Plans </a>
-                </article>
-
-         <!-- fourth Service -->
-                <article class="service-item">
-                    <img src="images/web.jpg" alt="Web Development">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi.</p>
-                    <a href="#" class="secondary-button">Web Plans </a>
-                </article>
-
-       <!-- Fifth Service -->
-                <article class="service-item">
-                    <img src="images/print.jpg" alt="Print Services">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi.</p>
-                    <a href="#" class="secondary-button">Print Plans </a>
-                </article>
+            <div class="service-item title-item">
+                <h2>Our Services</h2> 
             </div>
+            <article class="service-item">
+                <img src="images/digital.jpg" alt="Digital Transformation" class="image-article">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="secondary-button">Digital Plans</a>
+            </article>
+            <article class="service-item">
+                <img src="images/marketing.jpg" alt="Marketing" class="image-article">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="secondary-button">Marketing Plans</a>
+            </article>
+            <article class="service-item">
+                <img src="images/video.jpg" alt="Video Production" class="image-article">
+                <h3>Video Production</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="secondary-button">Video Plans</a>
+            </article>
+            <article class="service-item">
+                <img src="images/web.jpg" alt="Web Development" class="image-article">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="secondary-button">Web Plans</a>
+            </article>
+            <article class="service-item">
+                <img src="images/print.jpg" alt="Print Services" class="image-article">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="secondary-button">Print Plans</a>
+            </article>
         </section>
 
-      <!-- Vision Section -->
+        <!-- Vision Section -->
         <section class="vision-banner">
             <div class="vision-content">
                 <h2>Our Vision</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ex voluptatem deleniti iure, sit accusantium rerum est commodi.</p>
-                <a href="#" class="secondary-button">Learn More </a>
+                <a href="#" id="inf-vision">Learn More</a>
             </div>
         </section>
 
-        <!-- Team Section -->        
+        <!-- Team Section -->
         <section id="team" class="team-section">
             <h2>Our Team</h2>
             <div class="team-container">
-           <!-- Team Member -->
+                <!-- Team Member -->
                 <article class="team-member">
-                    <img src="images/john.jpg" alt="John Doe">
+                    <div class="prs-img" id="prs-img1"></div>
                     <div class="member-info">
                         <h3>John Doe</h3>
                         <h4>CEO and Co-owner</h4>
@@ -124,41 +119,37 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique.</p>
                     </div>
                 </article>
-           <!-- Team Member -->
-                <article class="team-member">
-                    <img src="images/bob.jpg" alt="Bob Rite">
+                <!-- Team Member  -->
+                <article class="team-member" id="team-member2">
                     <div class="member-info">
                         <h3>Bob Rite</h3>
                         <h4>CFO and Co-owner</h4>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique.</p>
                     </div>
+                    <div class="prs-img" id="prs-img2"></div>
                 </article>
             </div>
         </section>
 
-           <!-- Contact Section -->       
+        <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <h2>Contact Us</h2>
             <div class="contact-container">
                 <div class="contact-form-container">
                     <h3>Send us a message</h3>
-             <!-- Contact Form -->
+                <!-- Contact Form -->
                     <form>
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-
+                        <input type="text" id="name" required>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-
+                        <input type="email" id="email" required>
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5"></textarea>
-
+                        <textarea id="message" rows="5"></textarea>
                         <button type="submit" class="btn-submit">Send</button>
                     </form>
                 </div>
-
- <!-- Location Map -->               
+                <!-- location Map -->
                 <div class="location-container">
                     <h3>Location</h3>
                     <div class="map-location">
@@ -191,8 +182,7 @@
     </div>
     </section>
     </main>
-
-<!-- Footer -->    
+         <!-- footer -->
     <footer class="main-footer">
         <p>© Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="https://unsplash.com" target="_blank">Unsplash</a></p>
